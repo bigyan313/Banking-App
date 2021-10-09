@@ -113,8 +113,8 @@ public class AccountDriver {
         if(index >= 0) {
 
             // must be an  instance of savings bankAccount
-            if(accounts[index] instanceof savingsaccount) {
-                ((savingsaccount)accounts[index]).applyInterest();
+            if(accounts[index] instanceof SavingsAccount) {
+                ((SavingsAccount)accounts[index]).applyInterest();
             }
         } else {
             System.out.println("No Account exist with Account Number: " + bankAccountNumber);
